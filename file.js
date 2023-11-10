@@ -32,10 +32,10 @@ function createGrid () {
         for (let i = 0; i < gridSize; i++) {
             const cell = document.createElement('div');
             cell.className = 'cell';
-            cellWidthHeight = `${containerDimensions/gridNumber}`
+            cellWidthHeight = `${100/gridNumber}%`
             console.log(cellWidthHeight)
-            cell.style.width = `${cellWidthHeight}px`;
-            cell.style.height = `${cellWidthHeight}px`;
+            cell.style.width = `${cellWidthHeight}`;
+            cell.style.height = `${cellWidthHeight}`;
             cell.addEventListener('mouseenter', function () {
                 cell.style.backgroundColor = "red";
             })
