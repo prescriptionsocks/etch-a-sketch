@@ -10,10 +10,26 @@ body{
     min-height: 100vh;
 }
 
+.main{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
 .grid-container{
     width: 500px;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid rgba(128, 128, 128, 0.5);
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.cell{
+    border: 1px solid rgba(128, 128, 128, 0.075);
+    box-sizing: border-box;
+    flex-grow: 1;
 }
